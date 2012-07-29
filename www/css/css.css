@@ -13,6 +13,7 @@ body {
 #header h1 {
     margin: 0;
     padding: 0;
+	text-align: center
 }
 #header h1 a {
     background-color: #ccc;
@@ -73,4 +74,12 @@ body {
     line-height: 28px;5
     border-width: 0 8px 0 8px;6
     -webkit-border-image: url(images/button.png) 0 8 0 8;7
+}
+#back{
+	position:absolute;
+	top:7px;
+	left:6px;
+}
+p,h2{
+	padding:10px;
 }

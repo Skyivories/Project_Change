@@ -14,18 +14,26 @@
 	</div>
     <div id="back"><a href="index.html"><img src="img/back.gif" width="50" height="30" alt="back" /></a></div>
 	<div id="header">
-    <h2>Your Emergency Contacts</h2>
-    <p>This is a list of the people who will be notified in the event that you get in an accident. After the <i>Initial Countdown</i> phase, they will be contacted one by one by your choice of SMS (text message) or automated call.</p>
-    <p>To change the order that they are called, just drag their name up/down.</p>
+    <h2>Edit Contact</h2>
+    	<form>
 		<ul>
-            <li><a href="edit.html">Edit Contacts</a></li>
-            <li><a href="edit.html">(1st) Eugenia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(310) 654 9251</a></li>
-            <li><a href="edit.html">(2nd) Sebastian &nbsp;&nbsp;(365) 624 9881</a></li>
-            <li><a href="edit.html">(3rd) Jamie &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(642) 625 6245</a></li>
+            <li><a href="">Name</a></li>
+            <li><a href=""><input type="text" name="name" value="Eugenia"/></a>		  		</li>
+		</ul>
+        <ul>
+            <li><a href="">Number</a></li>
+            <li><a href=""><input type="text" name="number" value="(310) 654 9251"/></a></li>
+		</ul>
+        <ul>
+            <li><a href="">Contact Method</a></li>
+            <li><a href="">
+            <input type="radio" name="method" value="sms" checked/>SMS message<br />
+			<input type="radio" name="method" value="call" />Automated call</a>										  			</li>
 		</ul>
 		<div id="footer">
 		<p class="subtle">Tramalert, Inc.</p>
 		</div>
+        </form>
   </div>
 </div>
 
