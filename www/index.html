@@ -1,37 +1,77 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="css/css.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="user-scalable=no, width=device-width" />
-<title>Welcome</title>
-</head>
-<body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+            <meta name="viewport" content="user-scalable=no, width=device-width" />
+            <title>Welcome</title>
+            </head>
+    <body>
+        
+        <script type="text/javascript" src="js/index.js">
+            $('#navigation a').on('click', function(e){
+                                  e.preventDefault();
+                                  var nextPage = $(e.target.hash); 
+                                  document.write(nextPage);
+                                  $("#container .current").removeClass("current"); 
+                                  nextPage.addClass("current");
+                                  });
+            </script>
+        
+        <div id="container">
+            <div id="main_page" class="current">
+                <div id="header">
+                    <h1><a href="./">Traumalert</a></h1>
+                </div>
+                <div id="content">
+                    <img src="img/banner.gif" width="300" alt="Traumalert" />
+                    <p>Thank you for using Traumalert. Traumalert is a new app that will proctect you when you fall and ........blah....using advanced sensors.......contact your loved ones in any senario....</p>
+                </div>
+                <div id="header">
+                    <h2>Traumalert is currently</h2>
+                    <ul>
+                        <li><a href="deactivate.html">Activated</a></li>
+                    </ul>
+                    <div id="nav">
+                        <ul id="navigation">
+                            <li><a href="contacts.html">Emergency Contacts</a></li>
+                            <li><a href="#settings">Settings</a></li>   
+                        </ul>
+                    </div>
+                    <div id="footer">
+                        <p class="subtle">Traumalert, Inc.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div id="settings" class="current">
+                <div id="header">
+                    <h1><a href="./">Traumalert</a></h1>
+                </div>
+                <div id="header">
+                    <div id="back"><a href="index.html"><img src="img/back.gif" width="50" height="30" alt="back" /></a></div>
+                    <h2>Settings</h2>
+                    <ul>
+                        <li><a href="gps.html">network GPS: ON</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="cd0.html">Edit Initial countdown<br />(SMS after 00:00:20)</a></li>
+                        <li><a href="cd1.html">Edit first contact countdown<br />(SMS after 00:01:00)</a></li>
+                        <li><a href="cd2.html">Edit second contact countdown<br />(CALL after 00:04:00)</a></li>
+                        <li><a href="cd3.html">Edit third contact countdown<br />(CALL after 00:20:00)</a></li>
+                    </ul>
+                    <div id="footer">
+                        <p class="subtle">Traumalert, Inc.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
 
-<div id="container">
-	<div id="header">
-		<h1><a href="./">Traumalert</a></h1>
-	</div>
-	<div id="content">
-    	<img src="img/banner.gif" width="300" alt="Tramalert" />
-		<p>Thank you for using Traumalert. Tramalert is a new app that will proctect you when you fall and ........blah....using advanced sensors.......contact your loved ones in any senario....</p>
-	</div>
-	<div id="header">
-    	<h2>Traumalert is currently</h2>
-		<ul>
-            <li><a href="deactivate.html">Activated</a></li>
-		</ul>
-		<div id="nav">
-			<ul>
-        	    <li><a href="contacts.html">Emergency Contacts</a></li>
-        	    <li><a href="settings.html">Settings</a></li>   
-			</ul>
-		</div>
-		<div id="footer">
-		<p class="subtle">Tramalert, Inc.</p>
-		</div>
-	</div>
-</div>
-
-</body>
+        
+        
+    </body>
 </html>
